@@ -17,7 +17,7 @@ var sam = {
 };
 
 let users = new Map();
-
+//first john is key, it can be anything like johny,janny,canny
 users.set("john", john);
 users.set("marry", marry);
 users.set("sam", sam);
