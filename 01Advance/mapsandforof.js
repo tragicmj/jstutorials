@@ -18,6 +18,7 @@ var sam = {
 
 let users = new Map();
 //first john is key, it can be anything like johny,janny,canny
+//maps allows to know number of entities present
 users.set("john", john);
 users.set("marry", marry);
 users.set("sam", sam);

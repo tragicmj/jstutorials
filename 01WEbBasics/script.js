@@ -1,0 +1,10 @@
+// alert("File is attached");
+// console.log(document);
+// document.title = "I got changed";
+// console.log(document.title);
+// console.log(document.getElementById("idone"));
+// console.log(document.getElementsByClassName("classone"));
+// const myElement = document.querySelectorAll("#idone");
+// console.log(myElement[0]);
+// const myPElements = document.querySelector("p");
+// myPElements.textContent = "I am being changed";
