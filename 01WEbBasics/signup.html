@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#">
+      <input type="text" name="username" placeholder="Username" id="userName" />
+      <input
+        type="password"
+        name="password"
+        placeholder="Password"
+        id="passWord"
+      />
+      <input
+        type="password"
+        name="confirmpassword"
+        placeholder="Confirm Password"
+        id="confirmPassword"
+      />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="notification"></p>
+    <script>
+      document.querySelector("form").addEventListener("submit", event => {
+        event.preventDefault();
+        console.log(event.target.username.value);
+        console.log(event.target.password.value);
+        console.log(event.target.confirmpassword.value);
+        if (event.target.password.value != event.target.confirmpassword.value) {
+          var incopass = document.getElementById("notification");
+          incopass.textContent = "Password not same";
+        } else {
+          var copass = document.getElementById("notification");
+          copass.textContent = "Password same";
+        }
+        event.target.username.value = " ";
+        event.target.password.value = " ";
+        event.target.cofirmpassword.value = " ";
+      });
+    </script>
+  </body>
+</html>
