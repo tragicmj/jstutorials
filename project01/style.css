@@ -6,10 +6,12 @@ body {
   max-width: 1200px;
   height: auto;
   padding: 0 10px;
-  margin: 0 auto;
+  margin: 20px auto;
   text-align: center;
-  background-color: aquamarine;
-  min-height: 100vh;
+  border: 10px solid rgb(127, 255, 212);
+  background-color: #fff;
+  min-height: calc(100vh - 60px);
+  border-radius: 8px;
   overflow-y: auto;
   color: black;
 }
@@ -99,6 +101,10 @@ body {
 }
 #container .controls #remove {
   background-color: #c0392b;
+  border-radius: 10px;
+}
+#container .controls #removeAll {
+  background-color: #6c4197;
   border-radius: 10px;
 }
 #container .mycheck {
