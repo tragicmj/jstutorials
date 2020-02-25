@@ -115,3 +115,6 @@ body {
   opacity: 1 !important;
   border-radius: 10px;
 }
+.d-none {
+  display: none;
+}
